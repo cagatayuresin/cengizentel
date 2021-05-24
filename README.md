@@ -1,4 +1,4 @@
-# cengiz-entel
+# cengizentel
 [**@CengizEntel**](https://twitter.com/CengizEntel) is the Selenium based **Movie Recommendator Bot** who sends a good movie recommendaiton tweet per 3 hrs.
 
 ##### Update Notes:
