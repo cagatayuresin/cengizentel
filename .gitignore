@@ -1,1 +1,5 @@
 /venv/
+/__pycahe__
+/.idea
+geckodriver.exe
+geckodriver.log
