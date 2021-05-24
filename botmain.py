@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import random
-
+import datetime
 
 class TwitterBot:
     def __init__(self, username, password):
@@ -57,12 +57,13 @@ class TwitterBot:
             film = getRandom()
             ttid = film[5]
             rating = getRating(ttid)
-            tweet = "{} | Yıl: {} | IMDb: {}\nYön: {}\nTür: {}\n{}dk\n#sinema #film #öneri\nhttps://www.imdb.com/title/{}".format(film[0], film[1], rating, film[2], film[3], film[4], film[5])
+            tweet = "{} || {} || IMDb: {}\n{}\n{}\n{}min\n#sinema #film #öneri #movie #cinema\nhttps://www.imdb.com/title/{}".format(film[0], film[1], rating, film[2], film[3], film[4], film[5])
 
             if len(tweet) >= 275:
                 return tweetMaker()
             else:
                 return tweet
+        
         bot = self.bot
         tweet_button = bot.find_element_by_xpath('/html/body/div/div/div/div[2]/header/div/div/div/div[1]/div[3]/a')
         tweet_button.click()
@@ -74,7 +75,7 @@ class TwitterBot:
         time.sleep(1)
         tweet_send_button = bot.find_element_by_xpath('/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[3]/div/div/div/div[1]/div/div/div/div/div[2]/div[3]/div/div/div[2]/div[4]')
         tweet_send_button.click()
-        print('"{}" sent as Tweet.'.format(theTweet))
+        print('{}\n{}\n**************'.format(theTweet, datetime.datetime.now()))
             
 
 theEmail = theEmail()
@@ -85,3 +86,4 @@ cengizentel.login()
 while True:
     cengizentel.Tweetting()
     time.sleep(10800)
+
