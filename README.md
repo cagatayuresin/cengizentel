@@ -39,7 +39,7 @@ Open a terminal in the project folder and run this code:
 python botmain.py
 ```
 Terminal outputs will be like this: 
-```bash
+```
 The Bot is Online!
 PUT YOUR EMAIL OR USERNAME HERE sent as email.
 PUT YOUR PASSWORD HERE sent as password.
