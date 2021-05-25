@@ -27,7 +27,7 @@ def theEmail():
 Append movies to the *movies.csv* file by using ";" as delimeter.
 
 #### 4 - Setting the tweet frequency
-Edit the code at line 88 in *botmain.py*. Sleeping time (seconds) 10800 is for 3 hours. 
+Edit the code at line 160 in *botmain.py*. Sleeping time (seconds) 10800 is for 3 hours. 
 ```python
 while True:
     cengizentel.Tweetting()
