@@ -3,3 +3,5 @@
 /.idea
 geckodriver.exe
 geckodriver.log
+/.vscode
+environment.py
